@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+      
+    <div class="calc-body">
+        <h3>Calculator</h3>
+        <div class="display">
+            <input type="text" name="result" id="result" placeholder="0">
+            <button class="ac" onclick="clearResult()">AC</button>
+        </div>
+
+        <div class="calc-button-row">
+            <button onclick="appendToResult('7')">7</button>
+            <button onclick="appendToResult('8')">8</button>
+            <button onclick="appendToResult('9')">9</button>
+            <button class="opt" onclick="appendToResult('+')">&#43;</button>
+            <button onclick="appendToResult('4')">4</button>
+            <button onclick="appendToResult('5')">5</button>
+            <button onclick="appendToResult('6')">6</button>
+            <button class="opt" onclick="appendToResult('-')">&#8722;</button>
+            <button onclick="appendToResult('1')">1</button>
+            <button onclick="appendToResult('2')">2</button>
+            <button onclick="appendToResult('3')">3</button>
+            <button class="opt" onclick="appendToResult('/')">&#247;</button>
+            <button onclick="appendToResult('.')">.</button>
+            <button onclick="appendToResult('0')">0</button>
+            <button onclick="calculateResult()">&#61;</button>
+            <button class="opt" onclick="appendToResult('*')">&#215;</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+</html>
