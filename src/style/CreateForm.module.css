@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-style: cursive;
+}
+
+.required::after{
+    content: '*';
+    color: red;
+    margin-right: 2px;
+}
+
+button{
+    width: 30vw;
+    height: auto;
+}
